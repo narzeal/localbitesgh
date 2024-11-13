@@ -1,0 +1,47 @@
+/*Utilities*/
+
+.text-primary {
+    color: #FFB22C;
+}
+clr{
+    clear: both;
+}
+
+.bg-light{
+    background-color: #F3FEB8;
+    color: black;
+}
+
+.bg-dark{
+    background-color: #e9ec94;
+    color: #FEF3E2;
+}
+
+.btn{
+    background-color: #FFB22C;
+    padding: 10px 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*showcase*/
+
+.column{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+/*menu*/
+
+.column-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
