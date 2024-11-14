@@ -67,6 +67,14 @@ h1,h2,h3,h4{
     height: 150vh;
     width: 100%;
 }
+
+.showcase .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+}
 .showcase .column{
     display: flex;
     align-items: center;
@@ -192,11 +200,13 @@ h1,h2,h3,h4{
 /*services*/
 #services{
     height: 40vh;
+    width: 100%;
 }
 #services .column-1 div{
     background-color: #e9ec94;
-    padding: 20px 20px;
-    height: 40;
+    padding: 4% 5%;
+    height: 100%;
+    width: 100%;
     text-align: center;
 }
 #services .column-1 div > h1{
@@ -213,16 +223,23 @@ h1,h2,h3,h4{
 /*Reviews*/
 
 .reviews {
-    display: flex;
-    flex-direction: row-reverse;
     width: 100%;
     height: 100vh;
+}
+
+.reviews .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
 }
 .reviews .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 40%;
 }
 .reviews .content .image-1{
     background-image: url(../images/reviews/person-1.jpg);
@@ -249,7 +266,8 @@ h1,h2,h3,h4{
     background-color: #f4f4f4;
     padding: 20px 20px;
     border-radius: 10px;
-    width: 60%;
+    text-align: center;
+    width: 100%;
 }
 
 .reviews  .wallpaper{
@@ -266,8 +284,8 @@ h1,h2,h3,h4{
     border-bottom-right-radius: 100px;
     border-top-right-radius: 200px;
     border-bottom-left-radius: 200px;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
 }
 
 .reviews .wallpaper > .image{
@@ -310,18 +328,13 @@ h1,h2,h3,h4{
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 10px;
-        height: 30%;
-    }
-
-    .navbar ul{
-        margin-bottom: 50px;
-        flex-direction: column;
-        width: 100%;
-    }
-    .navbar ul a{
+        padding-top: 20px;
         padding-bottom: 30px;
-        margin-bottom: 20px;
+        height: 30vh;
+    }
+    .navbar ul{
+        display: block;
+        margin: 5px 20px;
         width: 100%;
     }
     .navbar ul  i{
@@ -332,18 +345,53 @@ h1,h2,h3,h4{
     }
 
     .showcase .content{
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         height: 10%;
     }
 
+    .showcase .wallpaper > .image{
+        background-image: url('../images/showcase-1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .showcase .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+    }
+
     .showcase .wallpaper{
-        display: none;
+        padding: 20px;
+        margin-left: 150px;
+    }
+
+    .showcase .content h1,p{
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    .showcase .content a{
+        margin-top: 10px;
+        margin-left: 85px;
     }
 
     .menu .column-1{
         flex-direction: column;
-        width: 100%;
+        width: 40px;
+    }
+    .menu .grid-column h2{
+        padding-top: 10px;
     }
     .menu .column-1 a{
         margin-bottom: 20px;
@@ -352,30 +400,67 @@ h1,h2,h3,h4{
     #services{
         height: 100%;
         margin-top: 20px;
+        width: 100%;
     }
     #services .column-1{
-
         flex-direction: column;
         width: 100%;
     }
-
-    .reviews{
-        flex-direction: column;
+    .reviews  .wallpaper  .image{
+        background-image: url('../images/show-11.jpeg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        bottom: 230px;
+        right: 50px
     }
-    .reviews .content {
+    .reviews .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
-        height: 100%;
+        height: 40vh;
     }
-    .reviews .comment-1 {
-        flex-direction: column;
+    .reviews .comment-1{
+        text-align: center;
         width: 100%;
     }
-    .reviews .comment-1 p{
-        width: fit-content;
-        height: fit-content;
+    .reviews .content h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .reviews .content{
+        width: 100%;
+        height: 10%;
     }
 
-    .reviews .wallpaper {
-        display: none;
+    .reviews .wallpaper{
+        padding: 20px;
+    }
+    .reviews .content p{
+        font-size: 20px;
+        line-height: 1.1;
+    }
+    .reviews .content a{
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+    .footer .social{
+        font-size: 12px;
+    }
+    .footer p{
+        font-size: 13px;
     }
 }
